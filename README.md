@@ -1,2 +1,2 @@
 # Bac-Info
-to help student 
+to help tunisian students get a good look at old bacaloriate tests

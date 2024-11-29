@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmation</title>
+</head>
+<body>
+    <h1>Programmation</h1>
+
+    <ul>
+        <li><a href="#" onclick="showPDF('file1.pdf')">Bac 2010</a></li>
+        <li><a href="#" onclick="showPDF('file2.pdf')">PDF 2</a></li>
+        <li><a href="#" onclick="showPDF('file3.pdf')">PDF 3</a></li>
+    </ul>
+    
+    <div id="pdfContainer"></div>
+    
+    <script>
+        function showPDF(file) {
+            var container = document.getElementById('pdfContainer');
+            container.innerHTML = `
+                <embed src="` + file + `" type="application/pdf">
+            `;
+        }
+</script>
+    
+</body>
+</html>
+    
